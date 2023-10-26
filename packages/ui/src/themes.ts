@@ -4,17 +4,17 @@ import { colors } from "./colors";
 
 // Note: This is a simple implementation of defining themes. If you would like to learn a more concise way, check out https://tamagui.dev/docs/guides/theme-builder 
 
-export const dark: TamaguiBaseTheme = {
+export const dark_brand: TamaguiBaseTheme = {
 	...darkColors,
-	background: colors.black,
-	backgroundFocus: colors.black,
-	backgroundHover: colors.neutral900,
-	backgroundPress: colors.black,
-	borderColor: colors.neutral900,
-	borderColorFocus: colors.neutral200,
-	borderColorHover: colors.neutral100,
-	borderColorPress: colors.neutral200,
-	color: colors.brandPrimary,
+	background: colors.brand800,
+	backgroundFocus: colors.brand600,
+	backgroundHover: colors.brand700,
+	backgroundPress: colors.brand600,
+	borderColor: colors.brand400,
+	borderColorFocus: colors.brand500,
+	borderColorHover: colors.brand500,
+	borderColorPress: colors.brand400,
+	color: colors.brand200,
 	colorFocus: colors.brand300,
 	colorHover: colors.brand400,
 	colorPress: colors.brand300,
@@ -24,16 +24,16 @@ export const dark: TamaguiBaseTheme = {
 	shadowColorPress: colors.neutral700
 }
 
-export const light: TamaguiBaseTheme = {
+export const light_brand: TamaguiBaseTheme = {
 	...lightColors,
-	background: colors.white,
-	backgroundFocus: colors.neutral300,
-	backgroundHover: colors.neutral200,
-	backgroundPress: colors.neutral300,
-	borderColor: colors.neutral100,
+	background: colors.brand100,
+	backgroundFocus: colors.brand300,
+	backgroundHover: colors.brand200,
+	backgroundPress: colors.brand300,
+	borderColor: colors.brandPrimary,
 	borderColorFocus: colors.neutral800,
 	borderColorHover: colors.neutral900,
-	borderColorPress: colors.neutral800,
+	borderColorPress: colors.brandPrimary,
 	color: colors.brandPrimary,
 	colorFocus: colors.brand900,
 	colorHover: colors.brand700,

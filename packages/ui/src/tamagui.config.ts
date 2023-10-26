@@ -1,7 +1,7 @@
 import { tokens } from "@tamagui/themes/v2"
 import { createTamagui, createTokens } from "tamagui"
 import { colors } from "./colors"
-import { dark, light } from "./themes"
+import { dark_brand, light_brand } from "./themes"
 
 const myTokens = createTokens({
 	...tokens,
@@ -10,8 +10,8 @@ const myTokens = createTokens({
 
 const appConfig = createTamagui({
 	themes: {
-		"light": light,
-		"dark": dark
+		light_brand,
+		dark_brand,
 	},
 	tokens: myTokens,
 })
