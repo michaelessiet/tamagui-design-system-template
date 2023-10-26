@@ -3,7 +3,7 @@
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "build": {
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+      "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
     "dev": {
@@ -12,6 +12,12 @@
     },
     "lint": {},
     "clean": {
+      "cache": false
+    },
+    "ios": {
+      "cache": false
+    },
+    "android": {
       "cache": false
     }
   }
