@@ -1,18 +1,8 @@
 import { TamaguiBaseTheme } from "tamagui";
-import { lightColors, darkColors } from "@tamagui/themes";
+import { lightColors, darkColors, themes } from "@tamagui/themes";
 import { colors } from "./colors";
 
 // Note: This is a simple implementation of defining themes. If you would like to learn a more concise way, check out https://tamagui.dev/docs/guides/theme-builder 
-
-export const dark: Partial<TamaguiBaseTheme> = {
-	background: colors.black,
-	color: colors.white
-}
-
-export const light: Partial<TamaguiBaseTheme> = {
-	background: colors.black,
-	color: colors.white
-}
 
 export const dark_brand: TamaguiBaseTheme = {
 	background: colors.brand800,
@@ -194,7 +184,7 @@ export const light_warning: TamaguiBaseTheme = {
 	borderColorFocus: colors.warning600,
 	borderColorHover: colors.warning600,
 	borderColorPress: colors.warning400,
-	color: colors.warning400,
+	color: colors.warning600,
 	colorFocus: colors.warning900,
 	colorHover: colors.warning700,
 	colorPress: colors.warning900,
