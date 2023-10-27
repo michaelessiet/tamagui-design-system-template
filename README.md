@@ -1,32 +1,39 @@
-# Turborepo react-native starter
+# Tamagui Design System Template
 
-This is an official starter Turborepo.
+This monorepo is a starter for an Expo + Tamagui app. 
 
-## Using this example
+## 📦 Included packages
+- [Tamagui](https://tamagui.dev)
+- [Expo SDK](https://docs.expo.dev)
 
-Run the following command:
+## 🗂️ Folder layout
+- `native` the Expo app
+- `packages` shared packages across apps
+	- `ui` includes your custom design system components, themes and colors
+	- `tsconfig` includes tsconfig files that can be extended from other packages or the apps
 
-```sh
-npx create-turbo@latest -e with-react-native-web
+## 🏁 Start the app
+- Step 1: Install the dependencies:
+```bash
+yarn install
+```
+- Step 2: Run the app
+```bash
+yarn workspace native ios
 ```
 
-## What's inside?
+**Note:** Note we're following the [design systems guide](https://tamagui.dev/docs/guides/design-systems) and creating our own package for the design system.
 
-This Turborepo includes the following packages/apps:
+See packages/ui named @package/ui for how this works.
 
-### Apps and Packages
+## ➕ Add new dependencies
 
-- `native`: a [react-native](https://reactnative.dev/) app built with [expo](https://docs.expo.dev/)
-- `web`: a [Next.js](https://nextjs.org/) app built with [react-native-web](https://necolas.github.io/react-native-web/)
-- `ui`: a stub [react-native](https://reactnative.dev/) component library shared by both `web` and `native` applications
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+### To the package
+```bash
+yarn workspace ui add some-package
+```
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [Expo](https://docs.expo.dev/) for native development
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [Prettier](https://prettier.io) for code formatting
+### To the app
+```bash
+yarn workspace native add react-native-reanimated
+```
